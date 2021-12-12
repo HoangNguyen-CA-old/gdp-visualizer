@@ -3,7 +3,34 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 .chart {
+  position: relative;
+}
+
+.bar {
+  fill: red;
+}
+
+.bar:hover {
+  fill: white;
+}
+
+#tooltip {
+  background-color: lavender;
+  padding: 10px;
+}
+
+#title {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.container {
+  position: relative;
   background-color: lightgray;
+  width: max-content;
 }

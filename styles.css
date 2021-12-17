@@ -12,7 +12,7 @@ html {
 }
 
 .bar {
-  fill: red;
+  fill: #33adff;
 }
 
 .bar:hover {
@@ -20,17 +20,30 @@ html {
 }
 
 #tooltip {
-  background-color: lavender;
-  padding: 10px;
+  background-color: #111;
+  color: white;
+  padding: 1rem;
+  text-align: center;
 }
 
 #title {
   text-align: center;
   font-size: 3rem;
+  font-weight: 400;
 }
 
 .container {
   position: relative;
-  background-color: lightgray;
   width: max-content;
+  padding: 1em;
+  background-color: white;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgray;
+  padding: 80px;
 }

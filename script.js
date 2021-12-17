@@ -61,13 +61,20 @@ window.addEventListener('DOMContentLoaded', () => {
         .on('mouseover', (e, d) => {
           tooltip.transition().style('visibility', 'visible');
 
-          tooltip.text(`${d[0]} ${d[1]}`).attr('data-date', d[0]);
+          tooltip
+            .html(
+              d[0] +
+                '<br>' +
+                '$' +
+                d[1].toFixed(1).replace(/(\d)(?=(\d{3})+\.)/g, '$1,') +
+                ' Billion'
+            )
+            .attr('data-date', d[0]);
         })
         .on('mouseout', (e, d) => {
           tooltip.transition().style('visibility', 'hidden');
         })
         .on('mousemove', (e, d) => {
-          console.log(e);
           const x = e.clientX;
           const y = e.clientY;
 

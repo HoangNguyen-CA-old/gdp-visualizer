@@ -20,7 +20,8 @@ html {
 }
 
 #tooltip {
-  background-color: #111;
+  background-color: #111111ee;
+
   color: white;
   padding: 1rem;
   text-align: center;
@@ -29,13 +30,13 @@ html {
 #title {
   text-align: center;
   font-size: 3rem;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .container {
   position: relative;
   width: max-content;
-  padding: 1em;
+  padding: 2em;
   background-color: white;
 }
 
